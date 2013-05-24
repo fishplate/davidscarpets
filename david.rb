@@ -1,10 +1,9 @@
 require 'bundler/setup'
-require "rubygems"
+require 'rubygems'
 require 'sinatra'
 require 'sinatra/flash'
 require 'pony'
 require './config/config.rb' if File.exists?('./config/config.rb')
-
 
 
 get '/' do
