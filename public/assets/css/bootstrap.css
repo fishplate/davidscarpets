@@ -223,11 +223,12 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arial';
   font-size: 14px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
+
 }
 
 a {
@@ -764,7 +765,9 @@ h3 {
 }
 
 h1 {
+  font-family: 'QuicksandLight';
   font-size: 38.5px;
+  text-align: center;
 }
 
 h2 {
@@ -1936,6 +1939,8 @@ input.search-query {
 
 .control-group {
   margin-bottom: 10px;
+  float:left;
+  margin-left:15px;
 }
 
 legend + .control-group {
