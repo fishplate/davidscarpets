@@ -15,7 +15,7 @@ post '/' do
     from = params[:name]
     subject = "#{params[:name]} has contacted you from David's Carpets Website"
 
-    body = "#{params[:email]}#{params[:tel]}"
+    body = "#{params[:email]} #{params[:tel]}"
 
   Pony.mail(
   :from => from,
