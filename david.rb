@@ -3,7 +3,7 @@ require 'rubygems'
 require 'sinatra'
 require 'pony'
 require 'sinatra/flash'
-require './config/config.rb' if File.exists?('./config/config.rb')
+# require './config/config.rb' if File.exists?('./config/config.rb')
 
 
 get '/' do
