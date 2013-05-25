@@ -223,10 +223,10 @@ textarea {
 
 body {
   margin: 0;
-  font-family: 'Arial';
+  font-family: 'QuicksandBookOblique';
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #333;
   background-color: #ffffff;
 
 }
@@ -651,6 +651,8 @@ a:focus {
 
 p {
   margin: 0 0 10px;
+  font-family:'Verdana';
+  text-align: justify;
 }
 
 .lead {
@@ -775,10 +777,12 @@ h2 {
 }
 
 h3 {
-  font-size: 24.5px;
+  font-family:'QuicksandBook';
+  font-size: 1.75em;
 }
 
 h4 {
+  font-family:'QuicksandBook';
   font-size: 17.5px;
 }
 
@@ -1943,6 +1947,10 @@ input.search-query {
   margin-left:15px;
 }
 
+.control-group.first {
+  margin-left:0px;
+}
+
 legend + .control-group {
   margin-top: 20px;
   -webkit-margin-top-collapse: separate;
@@ -2283,7 +2291,7 @@ table th[class*="span"],
   display: inline-block;
   width: 14px;
   height: 14px;
-  margin-top: 1px;
+  margin-top: -1px;
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
