@@ -71,6 +71,10 @@
     text-align: center;
   }
 
+  form {
+    text-align:center;
+  }
+
   .control-group {
    margin-bottom: 10px;
    float:none;
@@ -89,6 +93,18 @@
 
 li.span2 {
   text-align: center;
+}
+
+#header_top {
+  padding-bottom:0px;
+}
+
+.column_3 {
+  text-align:center;
+}
+
+ul.bullet {
+  margin:0px 30px auto;
 }
 
 
