@@ -24,6 +24,7 @@ span {
 
 .column_3 {
   margin-right: 20px;
+  padding:10px;
 }
 
 /*4. List styles*/
@@ -84,7 +85,7 @@ ul.bullet {
   border-radius: 3px;
 }
 .subscribe {
-  padding: 30px;
+  padding: 14px;
   background: url(/assets/img/form-bg-pattern.jpg) repeat #c4c4bd;
 }
 .subscribe h3 {
