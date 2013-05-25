@@ -43,15 +43,7 @@ ul.bullet {
   line-height: 2em;
   list-style: none;
 }
-/*5. Wrapper/
-/*---------------------------------------------------------------------------*/
-#wrapper {
-  background:url(/assets/img/pattern.jpg) repeat #f3f2f1;
-  padding: 30px 20px;
-  margin: 0 auto;
-  border-left: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
-}
+
 /*5.1 header_top/
 /*----------------------------------------*/
 #header_top {
