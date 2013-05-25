@@ -64,14 +64,18 @@
 
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
 
-   h3 {
+h3 {
     font-size:1.45em;
     text-align: center;
   }
 
-  form {
+#header_top {
+  padding-bottom:0px;
+}
+
+form {
     text-align:center;
   }
 
@@ -92,12 +96,28 @@
 }
 
 li.span2 {
+  width:50%;
+  float:left;
   text-align: center;
 }
 
-#header_top {
-  padding-bottom:0px;
+
+
+
+
+
+
 }
+
+@media all and (max-width: 320px) {
+
+
+li.span2 {
+  width:100%;
+  float:none;
+  text-align: center;
+}
+
 
 .column_3 {
   text-align:center;
