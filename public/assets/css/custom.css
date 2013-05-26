@@ -1,26 +1,14 @@
-
-/*1. Typography and other common styles/
-/*---------------------------------------------------------------------------*/
-/*Font families*/
-
-.twitt_user {
-  font-family: "Times New Roman", Times, serif;
-}
-/*Rest styles*/
-
-
 span {
   color: #a8531e;
   
 }
+
 .sub_heading {
   font-size: 12px;
   color: #958f8f;
   font-style: italic;
   text-align: center;
 }
-
-
 
 .column_3 {
   margin-right: 20px;
@@ -29,9 +17,6 @@ span {
 
 /*4. List styles*/
 /*---------------------------------------------------------------------------*/
-.bullet {
-  padding-top: 5px;
-}
 
 ul.bullet {
   margin:0px;
@@ -44,21 +29,13 @@ ul.bullet {
   list-style: none;
 }
 
-/*5.1 header_top/
-/*----------------------------------------*/
-#header_top {
-  background: url(../images/divider.jpg) repeat-x center bottom;
-  width: 100%;
-  padding-bottom: 30px;
-  text-align: center;
-  display: inline-block;
-}
 .title {
   font-family:'QuicksandBold';
   font-size: 1em;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
+  margin-bottom:15px;
 }
 .venue {
   font-size: 12px;
@@ -104,9 +81,7 @@ ul.bullet {
  color: #8a8a8a;
  opacity: 1;
 }
-#subform .antispam {
-  display:none;
-}
+
 
 
 /*Twitter/
@@ -120,11 +95,11 @@ ul.bullet {
   display: block;
 }
 #twitter p {
-  margin-bottom: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 .timestamp {
-  font-size: 11px;
+  font-size: 1em;
   margin-top: 15px;
   margin-bottom: 0;
 }
@@ -132,6 +107,7 @@ ul.bullet {
   background: url(/assets/img/twitter-bird.png) no-repeat right;
   padding: 30px 30px 30px 0px;
   color: #454242;
+  font-size:1.1em;
 }
 
 ul.tweetList {
@@ -182,15 +158,15 @@ ul.opening li span {
 
 /* Contact Form */
 
-  .help-inline {
-    display: block;
-    }
+.help-inline {
+  display: block;
+}
 
-    .submit {
-      display:inline-block;
-      margin-top:25px;
-      padding-left:10px;
-    }
+.submit {
+  display:inline-block;
+  margin-top:25px;
+  padding-left:10px;
+}
 
 /* Footer */
 
@@ -199,9 +175,22 @@ ul.opening li span {
   font-size: 0.9em;
   line-height: 1.3em;
   text-align: center;
-  
 }
 
 .center {
   text-align:center;
+}
+
+/* Flash Notice */
+
+#flash {
+   width:100%;
+   text-align:center;
+   text-align:center;
+}
+
+.notice {
+  font-size: 1.3em;
+  padding:10px;
+  color:#a8531e;
 }

@@ -58,10 +58,6 @@
       margin-top:25px;
       padding-left:10px;
     }
-
-
-
-
 }
 
 @media all and (max-width: 480px) {
@@ -105,9 +101,6 @@ li.span2 {
   text-align:center;
 }
 
-
-
-
 }
 
 @media all and (max-width: 320px) {
@@ -122,8 +115,5 @@ li.span2 {
 ul.bullet {
   margin:0px 30px auto;
 }
-
-
-
 
 }

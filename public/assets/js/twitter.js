@@ -269,7 +269,7 @@
 // Twitter function
 $(function(){
     $('#twitter').tweetable({
-    username: 'envato', 
+    username: 'Davids_Carpets', 
     time: true,
     rotate: true,
     speed: 4000, 

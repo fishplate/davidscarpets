@@ -5,6 +5,8 @@ require 'pony'
 require 'sinatra/flash'
 require './config/config.rb' if File.exists?('./config/config.rb')
 
+enable :sessions
+
 
 get '/' do
   erb :index
