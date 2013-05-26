@@ -101,8 +101,9 @@ li.span2 {
   text-align: center;
 }
 
-
-
+.column_3 {
+  text-align:center;
+}
 
 
 
@@ -116,11 +117,6 @@ li.span2 {
   width:100%;
   float:none;
   text-align: center;
-}
-
-
-.column_3 {
-  text-align:center;
 }
 
 ul.bullet {
