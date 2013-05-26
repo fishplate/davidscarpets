@@ -223,6 +223,7 @@ textarea {
 
 body {
   margin: 0;
+  margin-top:15px;
   font-family: 'QuicksandBookOblique';
   font-size: 14px;
   line-height: 20px;
