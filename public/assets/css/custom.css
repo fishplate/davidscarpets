@@ -181,6 +181,11 @@ ul.opening li span {
   text-align:center;
 }
 
+.stock {
+  width:170px;
+  height:100px;
+}
+
 /* Flash Notice */
 
 #flash {

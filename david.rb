@@ -1,12 +1,18 @@
 require 'bundler/setup'
+Bundler.require(:default)
+require 'sinatra/static_assets'
+require 'active_support/core_ext'
 require 'rubygems'
 require 'sinatra'
 require 'pony'
 require 'sinatra/flash'
 require './config/config.rb' if File.exists?('./config/config.rb')
+require './config/config_main'
+require './helpers/aws_helper'
+require './config/environments/development'
+require './config/environments/production'
 
 enable :sessions
-
 
 get '/' do
   erb :index

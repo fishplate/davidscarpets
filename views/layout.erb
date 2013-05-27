@@ -18,15 +18,6 @@
 <link rel="stylesheet" media="screen" href="/assets/css/resp-980.min.css"/>
 
 
-
-
-<!--jquery libraries others are at the bottom-->
-
-<script src="/assets/js/jquery-1.7-min.js" type="text/javascript"></script>
-<script src="/assets/js/valid_mail.min.js" type="text/javascript"></script>
-<script src="/assets/js/twitter.min.js" type="text/javascript"></script>
-<script src="/assets/js/custom.min.js" type="text/javascript"></script>
-
 </head>
 <body onload="initialize()">
   <%= styled_flash %>
@@ -34,6 +25,13 @@
 
   <%= yield %>
   <%= erb :footer %>
+
+
+<!-- Javascript -->
+<script src="/assets/js/jquery-1.7-min.js" type="text/javascript"></script>
+<script src="/assets/js/valid_mail.min.js" type="text/javascript"></script>
+<script src="/assets/js/twitter.min.js" type="text/javascript"></script>
+<script src="/assets/js/custom.min.js" type="text/javascript"></script>
 
   
 </body>
