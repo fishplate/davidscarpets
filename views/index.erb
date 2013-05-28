@@ -104,36 +104,5 @@
 <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApUO4ajt4kh5KnLE-zJbdmDKrVf7zqsvA&sensor=false">
 </script>
-<script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(51.779121, -3.207536),
-          zoom: 15,
-          scrollwheel: false,
-          draggable: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
 
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-
-        var marker = new google.maps.Marker({
-          position: map.getCenter(),
-          map: map,
-          title: 'Davids Carpets'
-        });
-
-        var center;
-        function calculateCenter() {
-         center = map.getCenter();
-        }
-         google.maps.event.addDomListener(map, 'idle', function() {
-         calculateCenter();
-        });
-         google.maps.event.addDomListener(window, 'resize', function() {
-         map.setCenter(center);
-        });
-
-      }
-    </script>
 

@@ -4,9 +4,8 @@ require 'active_support/core_ext'
 require './config/config' if File.exists?('config/config.rb')
 require './config/config_main'
 
-
-
-namespace :assets do
+#AWS Assets
+namespace :aws do
   desc "Precompile assets"
   task :precompile do
     AssetSync.sync

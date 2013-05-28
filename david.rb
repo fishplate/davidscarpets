@@ -12,6 +12,7 @@ require './helpers/aws_helper'
 require './config/environments/development'
 require './config/environments/production'
 
+
 enable :sessions
 
 get '/' do
