@@ -4,6 +4,7 @@ require 'sinatra/static_assets'
 require 'active_support/core_ext'
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/cross_origin'
 require 'pony'
 require 'sinatra/flash'
 require './config/config.rb' if File.exists?('./config/config.rb')
@@ -14,6 +15,11 @@ require './config/environments/production'
 
 
 enable :sessions
+
+configure do
+ enable :cross_origin
+end
+
 
 get '/' do
   erb :index
