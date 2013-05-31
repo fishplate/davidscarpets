@@ -186,6 +186,10 @@ ul.opening li span {
   height:100px;
 }
 
+.thumbnail h5 {
+  text-align: center;
+}
+
 /* Flash Notice */
 
 #flash {
