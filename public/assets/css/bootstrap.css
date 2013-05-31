@@ -923,7 +923,6 @@ input[type="submit"].btn::-moz-focus-inner {
 
 .thumbnail {
   display: block;
-  padding: 4px;
   line-height: 20px;
 }
 
