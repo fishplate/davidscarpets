@@ -28,15 +28,3 @@ function validate(){
     }
 }
 
-$(document).ready(function()
-    {
-        setTimeout(function()
-        {
-            $(".twitterImage").fadeOut("slow", function ()
-            {
-                $(".twitterImage").remove();                
-                $(".tweetText").text("Link Here");
-                
-            });
-         }, 500);
-     })
