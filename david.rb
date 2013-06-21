@@ -4,6 +4,8 @@ require 'sinatra/static_assets'
 require 'active_support/core_ext'
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/jsonp'
+require 'twitter'
 require 'sinatra/cross_origin'
 require 'pony'
 require 'sinatra/flash'
@@ -16,9 +18,17 @@ require './config/environments/production'
 
 enable :sessions
 
-configure do
- enable :cross_origin
-end
+ twitter_client = Twitter::Client.new(
+    :consumer_key       => ENV["CONSUMER_KEY"],
+    :consumer_secret    => ENV["CONSUMER_SECRET"],
+    :oauth_token        => ENV["OAUTH_TOKEN"],
+    :oauth_token_secret => ENV["OAUTH_SECRET"],
+  )
+
+  get '/feed' do
+    jsonp twitter_client.user_timeline('Davids_Carpets', :count => 4).map(&:attrs)
+  end
+
 
 
 get '/' do

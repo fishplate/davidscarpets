@@ -7,3 +7,5 @@ gem 'asset_sync', git: 'git://github.com/rumblelabs/asset_sync.git', branch: 'si
 gem 'sinatra-static-assets'
 gem 'sinatra-cross_origin'
 gem 'shotgun'
+gem 'sinatra-jsonp'
+gem 'twitter'

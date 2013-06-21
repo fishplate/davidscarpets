@@ -7,7 +7,7 @@ JQTWEET = {
     // core function of jqtweet
     loadTweets: function () {
         $.ajax({
-                url: 'http://api.twitter.com/1/statuses/user_timeline.json/',
+                url: '/feed',
                 type: 'GET',
                 dataType: 'jsonp',
                 data: {
@@ -25,14 +25,11 @@ JQTWEET = {
                         //this is where we grab the image, only generate the HTML code if media entities were found in the JSON data
                         try {
                             if (data[i].entities.media) {
-                                img = '<a href="' + data[i].entities.media[0].media_url + '" class="fancybox" rel="group">';
-                                img += '<img src="' + data[i].entities.media[0].media_url + '" class="twitterImage"  />';
+                                
+
+                                img = '<a href="' + data[i].entities.media[0].media_url + '"class="showLink">View Photo';
                                 img += '</a>';
-
-
-                                img_link = '<a href="' + data[i].entities.media[0].media_url + ' "class="showLink">View Photo';
-                                img_link += '</a>';
-                                img_link += '<img src="' + data[i].entities.media[0].media_url + '" class="twitterImage"  />';
+                                img += '<img src="' + data[i].entities.media[0].media_url + '" class="twitterImage"  />';
 
                             } else {
                                 img = '';
@@ -43,7 +40,7 @@ JQTWEET = {
 
                         $(JQTWEET.appendTo).append(
                             html.replace('IMG_TAG', img)
-                            .replace(img, img_link)
+                 
                             .replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text, img))
                             .replace(/USER/g, data[i].user.screen_name)
                             .replace('AGO', JQTWEET.timeAgo(data[i].created_at))
